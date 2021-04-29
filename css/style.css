@@ -1,0 +1,854 @@
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Thin'), local('Raleway-Thin'),
+    url('../fonts/raleway/ralewaythin.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaythin.woff') format('woff'),
+    url('../fonts/raleway/ralewaythin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Thin Italic'), local('Raleway-ThinItalic'),
+    url('../fonts/raleway/ralewaythinitalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaythinitalic.woff') format('woff'),
+    url('../fonts/raleway/ralewaythinitalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'),
+    url('../fonts/raleway/ralewayextralight.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayextralight.woff') format('woff'),
+    url('../fonts/raleway/ralewayextralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway ExtraLight Italic'), local('Raleway-ExtraLightItalic'),
+    url('../fonts/raleway/ralewayextralightitalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayextralightitalic.woff') format('woff'),
+    url('../fonts/raleway/ralewayextralightitalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Light'), local('Raleway-Light'),
+    url('../fonts/raleway/ralewaylight.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaylight.woff') format('woff'),
+    url('../fonts/raleway/ralewaylight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Light Italic'), local('Raleway-LightItalic'),
+    url('../fonts/raleway/ralewaylightitalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaylightitalic.woff') format('woff'),
+    url('../fonts/raleway/ralewaylightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Regular'), local('Raleway-Regular'),
+    url('../fonts/raleway/ralewayregular.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayregular.woff') format('woff'),
+    url('../fonts/raleway/ralewayregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Italic'), local('Raleway-Italic'),
+    url('../fonts/raleway/ralewayitalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayitalic.woff') format('woff'),
+    url('../fonts/raleway/ralewayitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Medium'), local('Raleway-Medium'),
+    url('../fonts/raleway/ralewaymedium.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaymedium.woff') format('woff'),
+    url('../fonts/raleway/ralewaymedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Medium Italic'), local('Raleway-MediumItalic'),
+    url('../fonts/raleway/ralewaymediumitalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaymediumitalic.woff') format('woff'),
+    url('../fonts/raleway/ralewaymediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
+    url('../fonts/raleway/ralewaysemibold.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaysemibold.woff') format('woff'),
+    url('../fonts/raleway/ralewaysemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway SemiBold Italic'), local('Raleway-SemiBoldItalic'),
+    url('../fonts/raleway/ralewaysemibolditalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaysemibolditalic.woff') format('woff'),
+    url('../fonts/raleway/ralewaysemibolditalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/raleway/ralewaybold.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaybold.woff') format('woff'),
+    url('../fonts/raleway/ralewaybold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'),
+    url('../fonts/raleway/ralewaybolditalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewaybolditalic.woff') format('woff'),
+    url('../fonts/raleway/ralewaybolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
+    url('../fonts/raleway/ralewayextrabold.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayextrabold.woff') format('woff'),
+    url('../fonts/raleway/ralewayextrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway ExtraBold Italic'), local('Raleway-ExtraBoldItalic'),
+    url('../fonts/raleway/ralewayextrabolditalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayextrabolditalic.woff') format('woff'),
+    url('../fonts/raleway/ralewayextrabolditalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Black'), local('Raleway-Black'),
+    url('../fonts/raleway/ralewayblack.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayblack.woff') format('woff'),
+    url('../fonts/raleway/ralewayblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Black Italic'), local('Raleway-BlackItalic'),
+    url('../fonts/raleway/ralewayblackitalic.woff2') format('woff2'),
+    url('../fonts/raleway/ralewayblackitalic.woff') format('woff'),
+    url('../fonts/raleway/ralewayblackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+    url('../fonts/roboto/Robotothin.woff2') format('woff2'),
+    url('../fonts/roboto/Robotothin.woff') format('woff'),
+    url('../fonts/roboto/Robotothin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'),
+    url('../fonts/roboto/Robotothinitalic.woff2') format('woff2'),
+    url('../fonts/roboto/Robotothinitalic.woff') format('woff'),
+    url('../fonts/roboto/Robotothinitalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto/Robotolight.woff2') format('woff2'),
+    url('../fonts/roboto/Robotolight.woff') format('woff'),
+    url('../fonts/roboto/Robotolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+    url('../fonts/roboto/Robotolightitalic.woff2') format('woff2'),
+    url('../fonts/roboto/Robotolightitalic.woff') format('woff'),
+    url('../fonts/roboto/Robotolightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto/Roboto.woff2') format('woff2'),
+    url('../fonts/roboto/Roboto.woff') format('woff'),
+    url('../fonts/roboto/Roboto.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Italic'), local('Roboto-Italic'),
+    url('../fonts/roboto/Robotoitalic.woff2') format('woff2'),
+    url('../fonts/roboto/Robotoitalic.woff') format('woff'),
+    url('../fonts/roboto/Robotoitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('../fonts/roboto/Robotomedium.woff2') format('woff2'),
+    url('../fonts/roboto/Robotomedium.woff') format('woff'),
+    url('../fonts/roboto/Robotomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+    url('../fonts/roboto/Robotomediumitalic.woff2') format('woff2'),
+    url('../fonts/roboto/Robotomediumitalic.woff') format('woff'),
+    url('../fonts/roboto/Robotomediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/roboto/Robotobold.woff2') format('woff2'),
+    url('../fonts/roboto/Robotobold.woff') format('woff'),
+    url('../fonts/roboto/Robotobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+    url('../fonts/roboto/Robotobolditalic.woff2') format('woff2'),
+    url('../fonts/roboto/Robotobolditalic.woff') format('woff'),
+    url('../fonts/roboto/Robotobolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black'), local('Roboto-Black'),
+    url('../fonts/roboto/Robotoblack.woff2') format('woff2'),
+    url('../fonts/roboto/Robotoblack.woff') format('woff'),
+    url('../fonts/roboto/Robotoblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'),
+    url('../fonts/roboto/Robotoblackitalic.woff2') format('woff2'),
+    url('../fonts/roboto/Robotoblackitalic.woff') format('woff'),
+    url('../fonts/roboto/Robotoblackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Revalia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Revalia Regular'), local('Revalia-Regular'),
+    url('../fonts/revalia/Revalia-Regular.ttf') format('truetype');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: normal;
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hello__block {
+  height: 700px;
+  background-color: #eeeff1;
+}
+
+/* HEADER START*/
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 57px;
+}
+
+.header__logo {
+  margin-left: 90px;
+}
+
+.logo__title {
+  margin: 0;
+  padding: 0;
+  font-family: Revalia;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #34547a;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar__item {
+  list-style-type: none;
+  margin-right: 42px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.navbar__link:hover {
+  color: #34547a;
+  font-weight: 600;
+  border-bottom: 2px solid #34547a;
+}
+
+/* HEADER FINISH*/
+
+/* HELLO START*/
+
+.hello {
+  margin-top: 130px;
+}
+
+.container__hello {
+  display: flex;
+}
+
+.picture__block {
+  margin: 0 130px;
+}
+
+.block__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+  margin: -40px 0 0 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000;
+}
+
+.main__suptitle {
+  margin-top: 40px;
+  width: 540px;
+  color: #727272;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
+  max-width: 230px;
+}
+
+.btn__sendMe {
+  margin-top: 40px;
+  padding: 25px 40px;
+  background-color: #34547a;
+}
+
+/* HELLO FINISH*/
+
+/* ABOUT START*/
+
+.about {
+  padding: 120px 0 100px 0;
+  background-color: #fff;
+}
+
+.container__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #000;
+}
+
+.about__suptitle {
+  max-width: 540px;
+  text-align: center;
+  color: #727272;
+}
+
+/* ABOUT FINISH*/
+
+/* MINISKILLS START*/
+
+.mini__skills {
+  padding: 100px 0;
+  background-color: #34547a;
+}
+
+.container__miniSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniSkills__item {
+  display: flex;
+  margin-right: 53px;
+}
+
+.miniSkills__title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7px;
+}
+
+.miniSkills__num {
+  margin: 0;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.miniSkills__text {
+  color: #fff;
+}
+/* MINISKILLS FINISH*/
+
+/* SKILLS START*/
+
+.skills {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.container__skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__items {
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+  width: 450px;
+}
+
+.skills__title {
+  margin: 0 0 50px 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000;
+}
+
+.skills__name {
+  margin: 0 0 20px 0;
+  line-height: 26px;
+  letter-spacing: 20%;
+  color: #727272;
+}
+
+.skills__progress {
+  width: 100%;
+  height: 6px;
+  border-radius: 0;
+  margin: 0 0 30px 0;
+}
+
+.skills__progress::-webkit-progress-value {
+  background: #34547a;
+}
+
+.skills__progress::-webkit-progress-bar {
+  background: #c4c4c4;
+}
+
+.skills__img {
+  width: 555px;
+  height: 450px;
+}
+
+/* SKILLS FINISH*/
+
+/* HOW START*/
+
+.how__work {
+  padding: 100px 0;
+  background-color: #eeeff1;
+}
+
+.container__how {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how__title {
+  margin: 0 0 50px 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #000;
+}
+
+.how__text {
+  margin: 0 0 57px 0;
+  max-width: 540px;
+  text-align: center;
+  color: #727272;
+}
+
+.video__block {
+  position: relative;
+  width: 1110px;
+  height: 600px;
+}
+
+.how__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* HOW FINISH*/
+
+/* WORKS START*/
+
+.works {
+  padding: 28px 0 15px 0;
+  background-color: #fff;
+}
+
+.container__works {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works__figure {
+  margin: 1px;
+  width: 348px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.works__description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px 40px;
+}
+
+.works__description:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: 0.5s ease;
+}
+
+.works__description:hover .works__title {
+  font-size: 30px;
+}
+
+.works__description:hover .works__title,
+.works__description:hover .works__items {
+  transform: translatey(0);
+}
+
+.works__description:hover:before {
+  height: 150px;
+}
+
+.works__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #34547a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transform: translatey(20px);
+  transition: 0.3s ease;
+}
+
+.works__list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  display: flex;
+}
+
+.works__items {
+  margin: 0 15px;
+  transform: translatey(80px);
+  list-style-type: none;
+}
+
+.works__items:nth-child(1) {
+  transition: 0.4s 0.05s;
+}
+
+.works__items:nth-child(2) {
+  transition: 0.4s 0.1s;
+}
+
+.works__items:nth-child(3) {
+  transition: 0.4s 0.15s;
+}
+
+.works__icon {
+  text-decoration: none;
+  color: #34547a;
+  font-size: 30px;
+  transition: 0.5s ease;
+}
+
+.works__icon:hover {
+  color: #000;
+}
+
+/* WORKS FINISH*/
+
+/* SPONSORS START*/
+
+.sponsors {
+  padding: 70px 0 100px 0;
+  background-color: #fff;
+}
+
+.container__sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors__item {
+  margin-right: 30px;
+}
+
+.sponsors__item:last-child {
+  margin-right: 0;
+}
+
+.sponsors__item img {
+  width: 255px;
+  height: 120px;
+}
+
+/* SPONSORS FINISH*/
+
+/* CONTACT START*/
+
+.contact {
+  padding: 100px 0;
+  background-color: #eeeff1;
+}
+
+.container__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__title {
+  margin: 0 0 50px 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #000;
+}
+
+.contact__text {
+  margin: 0 0 65px 0;
+  max-width: 540px;
+  text-align: center;
+  color: #727272;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input {
+  width: 255px;
+  height: 50px;
+  margin: 0 0 20px 0;
+  border: none;
+}
+
+.contact__input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
+  padding: 20px;
+}
+
+.contact__input:first-child {
+  margin: 0 30px 20px 0;
+}
+
+.contact__message {
+  border: none;
+  height: 175px;
+  margin: 0 0 50px 0;
+  resize: none;
+}
+
+.contact__message::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
+  padding: 20px;
+}
+
+.btn__submit {
+  margin: 0 auto;
+  width: 190px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  border: none;
+  background-color: #34547a;
+}
+
+/* CONTACT FINISH*/
+
+/* FOOTER START*/
+
+.footer {
+  padding: 50px 0;
+  background-color: #34547a;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer__name {
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footer__license {
+  margin: 0;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.social__link {
+  margin-right: 22px;
+}
+
+.social__link:last-child {
+  margin-right: 0;
+}
+
+/* FOOTER FINISH*/
